@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
-const { db } = require('./db/db');
+const { notes }  = require('./data/notes.json');
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
@@ -21,3 +21,9 @@ app.listen(PORT, () => {
 });
 
 // remote repo name is al-dente-ware
+// heroku app name is note-taker-dream-maker
+
+// 1. Define the schema basically in lib/notes.js
+// 2. Make CRUD routes in routes/apiRoutes/noteRoutes.js
+// 3. Connect backend to frontend
+// 4. Update things to reflect new file/folder names db/ to data/ , db.json to notes.json
