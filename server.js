@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 const { notes }  = require('./data/notes.json');
-const apiRoutes = require('./routes/apiRoutes');
+const apiRoutes = require('./routes/noteRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
 // establishes port at which the server will be hosted
